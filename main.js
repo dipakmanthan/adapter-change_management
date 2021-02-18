@@ -1,8 +1,8 @@
 // Update this constant with your ServiceNow credentials
 const options = {
-  url: 'https://dev69210.service-now.com/',
-  username: 'dipak',
-  password: 'Manthan_007'
+  url: 'https://dev83322.service-now.com/',
+  username: 'admin',
+  password: 'hHIXvhjkAO07'
 };
 
 
@@ -112,4 +112,4 @@ function main() {
 }
 
 // Call main to run it.
-main();
+main(); 

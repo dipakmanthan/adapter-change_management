@@ -60,8 +60,7 @@ class ServiceNowAdapter extends EventEmitter {
     this.id = id;
     this.props = adapterProperties;
     // Instantiate an object from the connector.js module and assign it to an object property.
-    log.info("URL is - " + this.props.url);
-     this.connector = new ServiceNowConnector({
+    this.connector = new ServiceNowConnector({
       url: this.props.url,
       username: this.props.auth.username,
       password: this.props.auth.password,
@@ -95,8 +94,9 @@ class ServiceNowAdapter extends EventEmitter {
    *   that handles the response.
    */
   healthcheck(callback) {
+
     let callbackData = null;
-  let callbackError = null;
+    let callbackError = null;
 
  this.getRecord( (result, error) => {
    /**
@@ -142,6 +142,7 @@ class ServiceNowAdapter extends EventEmitter {
    //return callback(callbackData, callbackError);
  });
   }
+
 
   /**
    * @memberof ServiceNowAdapter
